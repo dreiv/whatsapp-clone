@@ -19,6 +19,7 @@
         "border-in-box-model": true,
         "empty-line-between-groups": true
       }
-    ]
+    ],
+    "at-rule-no-unknown": null
   }
 }

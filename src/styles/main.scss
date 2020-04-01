@@ -4,9 +4,16 @@
 @import 'abstracts/placeholders';
 
 @import 'base/reset';
+@import 'base/scroll';
 @import 'base/typography';
 
+@import 'components/icon';
+
+@import 'layout/animations';
+@import 'layout/background';
 @import 'layout/grid';
+@import 'layout/responsive';
+@import 'layout/utility';
 
 @import 'themes/dark';
 

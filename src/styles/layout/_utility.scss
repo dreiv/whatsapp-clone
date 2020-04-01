@@ -1,0 +1,20 @@
+/* utility classes - always with !important */
+.u-flex {
+  display: flex !important;
+}
+
+.u-flex-column {
+  flex-direction: column !important;
+}
+
+.u-margin-end {
+  margin-#{$end-direction}: 10px !important;
+}
+
+.u-hide {
+  display: none !important;
+}
+
+.u-animation-click {
+  animation: clickableAnimation 20s ease-in-out -17s infinite;
+}

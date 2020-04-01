@@ -1,0 +1,71 @@
+.main-grid {
+  --private-block-margins: 0; /* private variables are for local componenet use */
+  position: fixed;
+  top: var(--private-block-margins);
+  bottom: var(--private-block-margins);
+
+  overflow: hidden;
+
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  #{$start-direction}: 0;
+  #{$end-direction}: 0;
+  > * {
+    @media #{$break1}, #{$break2}, #{$break3} {
+      max-height: 100vh;
+    }
+    @media #{$break4open} {
+      max-height: calc(100vh - 40px);
+    }
+  }
+  @media #{$break2open} {
+    display: grid;
+    grid-template-areas: 'side-a main side-b';
+    grid-template-columns: minmax(260px, 30%) 1fr auto;
+  }
+  @media #{$break4open} {
+    --private-block-margins: 20px;
+    width: 1396px;
+    margin: 0 auto;
+  }
+  /*logic styles*/
+  &.is-main-info-open {
+    @media #{$break1} {
+      .main-side {
+        display: none;
+      }
+      .main-content {
+        display: none;
+      }
+      .main-info {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media #{$break2} {
+      grid-template-areas: 'side-a side-b';
+      grid-template-columns: minmax(260px, 30%) 1fr;
+      .main-content {
+        display: none;
+      }
+      .main-info {
+        width: auto;
+      }
+    }
+  }
+  &.is-message-open {
+    @media #{$break1} {
+      .main-content {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
+.main-side {
+  grid-area: side-a;
+}
+.main-content {
+  grid-area: main;
+}
+.main-info {
+  grid-area: side-b;
+}

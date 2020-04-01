@@ -1,0 +1,5 @@
+.is-only-mobile {
+  @media #{$break2open} {
+    display: none !important;
+  }
+}

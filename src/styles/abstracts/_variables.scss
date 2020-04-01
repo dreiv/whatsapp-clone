@@ -1,11 +1,3 @@
-/* Responsive Variables */
-$break1: '(max-width:767px)';
-$break2: '(min-width:768px) and (max-width:1023px)';
-$break2open: '(min-width:768px)';
-$break3: '(min-width:1024px) and (max-width:1439px)';
-$break3open: '(min-width:1024px)';
-$break4open: '(min-width:1440px)';
-
 /* colors */
 :root {
   --white: #fff;
@@ -15,3 +7,15 @@ $break4open: '(min-width:1440px)';
   --dark-green: #009688;
   --info-message: rgba(225, 245, 254, 0.92);
 }
+
+/* Responsive Variables */
+$break1: '(max-width:767px)';
+$break2: '(min-width:768px) and (max-width:1023px)';
+$break2open: '(min-width:768px)';
+$break3: '(min-width:1024px) and (max-width:1439px)';
+$break3open: '(min-width:1024px)';
+$break4open: '(min-width:1440px)';
+
+/* Multi direcrtion Languages Support Variables*/
+$start-direction: left !default;
+$end-direction: right !default;

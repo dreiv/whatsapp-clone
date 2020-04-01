@@ -1,0 +1,11 @@
+html {
+  font-size: 1px; /*for using REM units*/
+}
+
+body {
+  color: var(--dark-gray);
+  font-size: 16rem;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
+    Cantarell, Fira Sans, sans-serif;
+  line-height: 1.3;
+}

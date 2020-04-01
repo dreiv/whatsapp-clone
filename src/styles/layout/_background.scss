@@ -1,0 +1,12 @@
+html {
+  min-height: 100vh;
+
+  background: linear-gradient(
+    to bottom,
+    var(--dark-green) 1px,
+    var(--dark-green) 130px,
+    #dddbd1 131px,
+    #d2dbdc 100%
+  );
+  background-repeat: no-repeat;
+}

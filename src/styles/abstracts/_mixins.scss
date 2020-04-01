@@ -1,0 +1,12 @@
+@mixin trim {
+  display: block;
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
