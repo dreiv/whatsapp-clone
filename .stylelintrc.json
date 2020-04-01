@@ -20,6 +20,7 @@
         "empty-line-between-groups": true
       }
     ],
-    "at-rule-no-unknown": null
+    "at-rule-no-unknown": null,
+    "no-descending-specificity": null
   }
 }
