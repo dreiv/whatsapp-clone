@@ -1,0 +1,17 @@
+/* Responsive Variables */
+$break1: '(max-width:767px)';
+$break2: '(min-width:768px) and (max-width:1023px)';
+$break2open: '(min-width:768px)';
+$break3: '(min-width:1024px) and (max-width:1439px)';
+$break3open: '(min-width:1024px)';
+$break4open: '(min-width:1440px)';
+
+/* colors */
+:root {
+  --white: #fff;
+  --dark-gray: #333;
+  --main-gray: #ededed;
+  --light-gray: #f7f7f7;
+  --dark-green: #009688;
+  --info-message: rgba(225, 245, 254, 0.92);
+}
