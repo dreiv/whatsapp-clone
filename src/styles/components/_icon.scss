@@ -17,21 +17,22 @@
   transform: scale(1.4);
   transform-origin: center;
 }
+
 .icon-status {
   filter: grayscale(1) opacity(0.3) invert(1);
 }
+
 .icon-silent {
   filter: grayscale(1) opacity(0.3);
 }
-.icon-attach {
-  /*transform:rotateZ(70deg); transform-origin:center*/
-}
+
 .icon-menu {
   text-align: center;
+
   &::before {
     display: inline-block;
-    width: 4px;
-    height: 4px;
+    width: 0.25rem;
+    height: 0.25rem;
     border-radius: 50%;
 
     vertical-align: middle;

@@ -1,5 +1,5 @@
 .is-only-mobile {
-  @media #{$break2open} {
+  @media #{$tabletUp} {
     display: none !important;
   }
 }
