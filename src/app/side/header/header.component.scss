@@ -4,7 +4,8 @@
 $itemSize: 2.5rem;
 
 :host {
-  @include flex-center-vert;
+  display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   box-sizing: border-box;
   height: 3.5rem;
@@ -37,6 +38,7 @@ $itemSize: 2.5rem;
 }
 
 nav {
+  @include flex-center-vert;
   flex-shrink: 0;
 
   & > button {

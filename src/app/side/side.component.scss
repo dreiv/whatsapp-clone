@@ -1,0 +1,8 @@
+@import 'abstracts/mixins';
+
+:host {
+  @include flex-column;
+  height: 100%;
+
+  background-color: var(--white);
+}
