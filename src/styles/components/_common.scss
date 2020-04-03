@@ -1,0 +1,14 @@
+.text-input {
+  margin: var(--space-xs-fixed) var(--space-unit-fixed);
+  padding: var(--space-xs-fixed);
+  border-width: 0;
+  border-radius: 1.25rem;
+
+  background-color: var(--white);
+
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+}

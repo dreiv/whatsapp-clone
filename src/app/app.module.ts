@@ -2,21 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SideComponent } from './side/side.component';
 import { ContentComponent } from './content/content.component';
 import { InfoComponent } from './info/info.component';
-import { HeaderComponent } from './side/header/header.component';
+import { SideModule } from './side/side.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideComponent,
     ContentComponent,
     InfoComponent,
-    HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SideModule
   ],
   providers: [],
   bootstrap: [AppComponent]
