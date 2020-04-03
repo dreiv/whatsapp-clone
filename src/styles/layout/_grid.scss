@@ -1,14 +1,9 @@
 .main-grid {
   --private-block-margins: 0; /* private variables are for local component use */
-  position: fixed;
-  top: var(--private-block-margins);
-  bottom: var(--private-block-margins);
-
+  @include position(fixed, var(--private-block-margins), 0);
   overflow: hidden;
 
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-  #{$start-direction}: 0;
-  #{$end-direction}: 0;
 
   > * {
     max-height: 100vh;

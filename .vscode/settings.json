@@ -2,5 +2,8 @@
   "[css]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint",
     "editor.formatOnSave": true
-  }
+  },
+  "cSpell.words": [
+    "horiz"
+  ]
 }

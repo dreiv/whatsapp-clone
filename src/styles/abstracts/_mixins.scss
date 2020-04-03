@@ -6,7 +6,68 @@
   text-overflow: ellipsis;
 }
 
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin margin-vert($top, $bottom: $top) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin margin-horiz($left, $right: $left) {
+  margin-right: $right;
+  margin-left: $left;
+}
+
 @mixin scroll {
   overflow-y: auto;
   scrollbar-width: thin;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin cover-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin position(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: $top,
+  $left: $right
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
 }
