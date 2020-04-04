@@ -21,6 +21,16 @@
   margin-left: $left;
 }
 
+@mixin padding-vert($top, $bottom: $top) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin padding-horiz($left, $right: $left) {
+  padding-right: $right;
+  padding-left: $left;
+}
+
 @mixin scroll {
   overflow-y: auto;
   scrollbar-width: thin;

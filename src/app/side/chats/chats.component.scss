@@ -1,3 +1,95 @@
-:host {
+@import 'abstracts/mixins';
+
+.chat-list {
   overflow-y: auto;
+}
+
+.chat {
+  @include padding-horiz(13px, 1rem);
+
+  display: grid;
+  grid-template-areas:
+    'image header'
+    'image content';
+  grid-template-columns: 3rem 1fr;
+
+  gap: var(--space-xxs) var(--space-xs);
+  height: 4rem;
+
+  cursor: pointer;
+
+  &-image {
+    @include margin-vert(auto);
+
+    grid-area: image;
+    border-radius: 50%;
+  }
+}
+
+.header {
+  display: flex;
+  grid-area: header;
+  align-items: flex-end;
+
+  overflow: hidden;
+
+  &-text {
+    @include trim;
+
+    flex: 1;
+
+    font-weight: inherit;
+  }
+
+  &-time {
+    flex-shrink: 0;
+    margin-left: 1ch;
+
+    font-size: 12px;
+
+    opacity: 0.6;
+  }
+}
+
+.content {
+  display: flex;
+  grid-area: content;
+  border-bottom: 1px solid var(--main-gray);
+  overflow: hidden;
+
+  &-last {
+    @include trim;
+    flex: 1;
+
+    font-weight: inherit;
+
+    font-size: 14px;
+
+    opacity: 0.6;
+  }
+
+  &-info {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 0.5ch;
+  }
+}
+
+.unread {
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  border-radius: 11px;
+
+  color: var(--white);
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+
+  background-color: var(--light-green);
+
+  &:empty {
+    display: none;
+  }
 }

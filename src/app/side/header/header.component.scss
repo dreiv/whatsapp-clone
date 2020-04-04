@@ -1,4 +1,3 @@
-@import 'abstracts/variables';
 @import 'abstracts/mixins';
 
 $itemSize: 2.5rem;
@@ -17,7 +16,6 @@ $itemSize: 2.5rem;
 
 .profile {
   display: flex;
-  min-width: $itemSize;
 
   &-image {
     @include box($itemSize);
@@ -30,19 +28,17 @@ $itemSize: 2.5rem;
     @include margin-vert(auto);
 
     margin-left: 1ch;
-
-    @media #{$phone} {
-      display: none;
-    }
   }
 }
 
-nav {
+.nav {
   @include flex-center-vert;
+
   flex-shrink: 0;
 
-  & > button {
+  &-item {
     @include box($itemSize);
+
     padding: var(--space-xs-fixed);
 
     font-size: 18px;
