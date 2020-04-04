@@ -1,8 +1,9 @@
-<ul class="chat-list">
+<ul>
   <li
     class="chat"
     [class.chat-unread]="chat.status?.unreadCount"
     role="button"
+    tabindex="0"
     *ngFor="let chat of chats"
   >
     <img src="{{ chat.image }}" alt="{{ chat.name }}" class="chat-image" />
@@ -15,9 +16,9 @@
     <div class="content">
       <p class="content-last">
         <ng-container [ngSwitch]="chat.last?.readStatus">
-          <span *ngSwitchCase="'seen'" class="content-seen">✔️✔️</span>
-          <span *ngSwitchCase="'sent'" class="content-sent">✔️</span>
-          <span *ngSwitchCase="'pending'" class="content-pending">⏱️</span>
+          <span *ngSwitchCase="'seen'" class="icon-seen">✔️✔️</span>
+          <span *ngSwitchCase="'sent'" class="icon-sent">✔️</span>
+          <span *ngSwitchCase="'pending'" class="icon-pending">⏱️</span>
         </ng-container>
         {{ chat.last.message }}
       </p>

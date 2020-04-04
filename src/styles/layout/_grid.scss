@@ -8,7 +8,7 @@
   > * {
     max-height: 100vh;
 
-    @media #{$desktopUp} {
+    @media #{$wide} {
       max-height: calc(100vh - 2rem);
     }
   }
@@ -19,7 +19,7 @@
     grid-template-columns: minmax(16rem, 30%) 1fr auto;
   }
 
-  @media #{$desktopUp} {
+  @media #{$wide} {
     --private-block-margins: 1rem;
     width: 86rem;
     margin: 0 auto;

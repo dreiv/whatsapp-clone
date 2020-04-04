@@ -1,5 +1,7 @@
 @import 'abstracts/mixins';
 
+$fade: 0.6;
+
 :host {
   overflow-y: auto;
 }
@@ -28,6 +30,15 @@
   &-unread {
     font-weight: bold;
   }
+
+  &:focus {
+    background-color: var(--main-gray);
+    outline: none;
+  }
+
+  &:hover:not(:focus) {
+    background-color: var(--light-gray);
+  }
 }
 
 .header {
@@ -51,7 +62,7 @@
 
     font-size: 12px;
 
-    opacity: 0.6;
+    opacity: $fade;
   }
 }
 
@@ -63,24 +74,14 @@
 
   &-last {
     @include trim;
+
     flex: 1;
 
     font-weight: inherit;
 
     font-size: 14px;
 
-    opacity: 0.6;
-  }
-
-  &-seen {
-    margin-right: 1.5ch;
-
-    letter-spacing: -14px;
-  }
-
-  &-sent,
-  &-pending {
-    filter: grayscale(1);
+    opacity: $fade;
   }
 
   &-info {

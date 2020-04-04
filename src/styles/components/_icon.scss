@@ -23,6 +23,17 @@
   filter: grayscale(1) opacity(0.3);
 }
 
+.icon-seen {
+  margin-right: 1.5ch;
+
+  letter-spacing: -14px;
+}
+
+.icon-sent,
+.icon-pending {
+  filter: grayscale(1);
+}
+
 .icon-menu {
   text-align: center;
 

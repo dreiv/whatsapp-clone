@@ -6,10 +6,9 @@ import { Chat } from './chat';
   providedIn: 'root'
 })
 export class ChatsService {
-  public chats: Chat[]
+  public chats: Chat[];
 
   constructor() {
     this.chats = chats;
-    console.log(chats)
   }
 }
