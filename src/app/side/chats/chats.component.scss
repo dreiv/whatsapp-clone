@@ -1,11 +1,11 @@
 @import 'abstracts/mixins';
 
-.chat-list {
+:host {
   overflow-y: auto;
 }
 
 .chat {
-  @include padding-horiz(13px, 1rem);
+  @include padding-horiz(13px, 0.5rem);
 
   display: grid;
   grid-template-areas:
@@ -70,6 +70,17 @@
     font-size: 14px;
 
     opacity: 0.6;
+  }
+
+  &-seen {
+    margin-right: 1.5ch;
+
+    letter-spacing: -14px;
+  }
+
+  &-sent,
+  &-pending {
+    filter: grayscale(1);
   }
 
   &-info {

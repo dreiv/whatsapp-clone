@@ -7,6 +7,8 @@
   flex-shrink: 0;
   height: 3rem;
 
+  border-bottom: 1px solid var(--main-gray);
+
   background-color: var(--light-gray);
 
   transition: background-color 0.2s;
@@ -20,7 +22,7 @@
 
     filter: grayscale(1) opacity(0.5);
 
-    content: '🔎';
+    content: '🔍';
   }
 
   &:focus-within {

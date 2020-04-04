@@ -1,7 +1,7 @@
 <ul class="chat-list">
   <li
     class="chat"
-    [class.chat-unread]="chat.status.unreadCount"
+    [class.chat-unread]="chat.status?.unreadCount"
     role="button"
     *ngFor="let chat of chats"
   >
@@ -13,11 +13,19 @@
     </header>
 
     <div class="content">
-      <p class="content-last">{{ chat.last.message }}</p>
-      <ul class="content-info">
-        <li *ngIf="chat.status.muted" class="icon-silent">🔇</li>
-        <li *ngIf="chat.status.pined" class="icon-pin">📌</li>
-        <li *ngIf="chat.status.unreadCount" class="unread">
+      <p class="content-last">
+        <ng-container [ngSwitch]="chat.last?.readStatus">
+          <span *ngSwitchCase="'seen'" class="content-seen">✔️✔️</span>
+          <span *ngSwitchCase="'sent'" class="content-sent">✔️</span>
+          <span *ngSwitchCase="'pending'" class="content-pending">⏱️</span>
+        </ng-container>
+        {{ chat.last.message }}
+      </p>
+
+      <ul *ngIf="chat.status" class="content-info">
+        <li *ngIf="chat.status?.muted" class="icon-silent">🔇</li>
+        <li *ngIf="chat.status?.pined" class="icon-pin">📌</li>
+        <li *ngIf="chat.status?.unreadCount" class="unread">
           {{ chat.status.unreadCount }}
         </li>
       </ul>

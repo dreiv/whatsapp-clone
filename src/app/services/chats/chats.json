@@ -1,6 +1,6 @@
 [
   {
-    "image": "assets/img/user1.jpg",
+    "image": "assets/img/tommy.jpg",
     "name": "🚴 gO OUtSide sO bEAuTifUl!",
     "last": {
       "message": "Ahh... wHaT aRe u DoInG oN CoMpUtEr?? 👀",
@@ -10,6 +10,129 @@
       "muted": true,
       "pined": true,
       "unreadCount": 3
+    }
+  },
+  {
+    "image": "assets/img/randomChimp.jpg",
+    "name": "Random Chimp",
+    "last": {
+      "message": "Me depressed bc of quarantine 😟",
+      "time": "9:28 AM"
+    },
+    "status": {
+      "pined": true
+    }
+  },
+  {
+    "image": "assets/img/pewdie.jpg",
+    "name": "Pewdie🥞",
+    "last": {
+      "message": "Home is where you trust the toilet",
+      "time": "1:37 AM"
+    },
+    "status": {
+      "muted": true,
+      "unreadCount": 1
+    }
+  },
+  {
+    "image": "assets/img/rubberDucky.jpg",
+    "name": "Rubber 🦆",
+    "last": {
+      "message": "The answer to your problem is Consistent Hashing.",
+      "time": "Yesterday"
+    }
+  },
+  {
+    "image": "assets/img/kappa.jpg",
+    "name": "Kappa",
+    "last": {
+      "message": "it also has a bowl-like head, in which it keeps a small amount of water, and this is a key to apparently defeating this monster.",
+      "time": "Yesterday",
+      "readStatus": "seen"
+    }
+  },
+  {
+    "image": "assets/img/yoda.jpg",
+    "name": "Yoda",
+    "last": {
+      "message": "Do or do not. There is no try.",
+      "time": "Yesterday"
+    }
+  },
+  {
+    "image": "assets/img/trump.jpg",
+    "name": "Trump",
+    "last": {
+      "message": "Really sick and tired of winning 😏",
+      "time": "Yesterday"
+    }
+  },
+  {
+    "image": "assets/img/mrPickles.jpg",
+    "name": "Mr. Pickles 🥒",
+    "last": {
+      "message": "Good boy!",
+      "time": "Friday",
+      "readStatus": "sent"
+    }
+  },
+  {
+    "image": "assets/img/wiseau.jpg",
+    "name": "Wiseau Karash",
+    "last": {
+      "message": "I inspire myself.",
+      "time": "Friday"
+    }
+  },
+  {
+    "image": "assets/img/lambie.jpg",
+    "name": "Lambie",
+    "last": {
+      "message": "I only realized when I got home that you fleeced me.",
+      "time": "Friday",
+      "readStatus": "seen"
+    }
+  },
+  {
+    "image": "assets/img/quaintrelle.jpg",
+    "name": "Quaintrelle",
+    "last": {
+      "message": "It was a great pleasure for me. 😊",
+      "time": "Thursday"
+    }
+  },
+  {
+    "image": "assets/img/bear.jpg",
+    "name": "Bear",
+    "last": {
+      "message": "Mmm… Let’s see how my stocks are doing today!",
+      "time": "Wednesday"
+    }
+  },
+  {
+    "image": "assets/img/standing.jpg",
+    "name": "Mr. Y",
+    "last": {
+      "message": "You see me once in June, twice in November, but not at all in May. What am I?",
+      "time": "Wednesday"
+    }
+  },
+  {
+    "image": "assets/img/belle.jpg",
+    "name": "Belle Haber",
+    "last": {
+      "message": "Whats up?",
+      "time": "Tuesday"
+    }
+  },
+  {
+    "image": "assets/img/cash.jpg",
+    "name": "Johnny 🤑",
+    "last": {
+      "message": "Wheres my money?",
+      "time": "Monday",
+      "readStatus": "pending"
     }
   }
 ]

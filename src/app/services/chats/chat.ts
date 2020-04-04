@@ -3,11 +3,12 @@ export interface Chat {
   name: string,
   last: {
     message: string,
-    time: string
+    time: string,
+    readStatus?: string
   },
-  status: {
+  status?: {
     muted?: boolean,
     pined?: boolean,
-    unreadCount: number
+    unreadCount?: number
   }
 }
