@@ -24,6 +24,10 @@
     grid-area: image;
     border-radius: 50%;
   }
+
+  &-unread {
+    font-weight: bold;
+  }
 }
 
 .header {
@@ -88,8 +92,4 @@
   text-align: center;
 
   background-color: var(--light-green);
-
-  &:empty {
-    display: none;
-  }
 }

@@ -1,0 +1,15 @@
+[
+  {
+    "image": "assets/img/user1.jpg",
+    "name": "🚴 gO OUtSide sO bEAuTifUl!",
+    "last": {
+      "message": "Ahh... wHaT aRe u DoInG oN CoMpUtEr?? 👀",
+      "time": "10:03 AM"
+    },
+    "status": {
+      "muted": true,
+      "pined": true,
+      "unreadCount": 3
+    }
+  }
+]

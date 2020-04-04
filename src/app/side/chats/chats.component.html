@@ -1,18 +1,25 @@
 <ul class="chat-list">
-  <li class="chat" role="button">
-    <img src="assets/img/user1.jpg" alt="Random" class="chat-image" />
+  <li
+    class="chat"
+    [class.chat-unread]="chat.status.unreadCount"
+    role="button"
+    *ngFor="let chat of chats"
+  >
+    <img src="{{ chat.image }}" alt="{{ chat.name }}" class="chat-image" />
 
     <header class="header">
-      <p class="header-text">Header Header Header</p>
-      <time class="header-time">10:00 AM</time>
+      <p class="header-text">{{ chat.name }}</p>
+      <time class="header-time">{{ chat.last.time }}</time>
     </header>
 
     <div class="content">
-      <p class="content-last">I like the quarantine!</p>
+      <p class="content-last">{{ chat.last.message }}</p>
       <ul class="content-info">
-        <li class="icon-silent">🔇</li>
-        <li class="icon-pin">📌</li>
-        <li class="unread">3</li>
+        <li *ngIf="chat.status.muted" class="icon-silent">🔇</li>
+        <li *ngIf="chat.status.pined" class="icon-pin">📌</li>
+        <li *ngIf="chat.status.unreadCount" class="unread">
+          {{ chat.status.unreadCount }}
+        </li>
       </ul>
     </div>
   </li>
