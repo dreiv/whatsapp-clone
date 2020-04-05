@@ -1,0 +1,38 @@
+@import 'abstracts/mixins';
+
+:host {
+  @include flex-center-vert;
+
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: var(--space-xxs) var(--space-xs);
+
+  background-color: var(--main-gray);
+}
+
+.common-text-input {
+  flex: 1;
+
+  &:empty {
+    ~ .submit-button {
+      display: none;
+    }
+
+    &::before {
+      font-size: 1rem;
+
+      opacity: 0.6;
+
+      content: 'Type a message';
+    }
+  }
+
+  &:not(:empty) ~ .voice-button {
+    display: none;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #e0e0e0;
+  }
+}

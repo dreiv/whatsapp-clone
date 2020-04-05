@@ -1,0 +1,8 @@
+.common-button {
+  @include box(2.5rem);
+
+  padding: var(--space-xs-fixed);
+
+  font-size: 18px;
+  text-align: center;
+}
