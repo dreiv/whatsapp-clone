@@ -33,6 +33,6 @@
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #e0e0e0;
+    box-shadow: 0 0 0 2px var(--highlight);
   }
 }

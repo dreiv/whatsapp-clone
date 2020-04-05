@@ -3,17 +3,17 @@ import { ChatsService } from 'src/app/services/chats/chats.service';
 import { Chat } from 'src/app/services/chats/chat';
 
 @Component({
-  selector: 'app-side-chats',
-  templateUrl: './chats.component.html',
-  styleUrls: ['./chats.component.scss']
+  selector: 'app-info-content',
+  templateUrl: './content.component.html',
+  styleUrls: ['./content.component.scss']
 })
-export class ChatsComponent implements OnInit {
-  chats: Chat[]
+export class ContentComponent implements OnInit {
+  activeChat: Chat;
 
   constructor(private chatsService: ChatsService) { }
 
   ngOnInit(): void {
-    this.chats = this.chatsService.chats;
+    this.activeChat = this.chatsService.getActiveChat();
   }
 
 }

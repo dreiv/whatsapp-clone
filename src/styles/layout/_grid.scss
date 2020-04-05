@@ -63,14 +63,24 @@
 }
 
 .main-side {
+  @include flex-column;
+
   grid-area: side;
+  height: 100%;
+
+  background-color: var(--white);
 }
 .main-content {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
+
   grid-area: main;
   overflow-x: hidden;
 }
 .main-info {
   grid-area: info;
+  width: 20rem;
+  height: 100%;
+
+  background-color: var(--white);
+  @include flex-column;
 }

@@ -3,12 +3,12 @@ import { ChatsService } from 'src/app/services/chats/chats.service';
 import { Chat } from 'src/app/services/chats/chat';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-content-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  activeChat: Chat
+  activeChat: Chat;
 
   constructor(private chatsService: ChatsService) { }
 

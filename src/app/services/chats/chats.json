@@ -1,11 +1,17 @@
 [
   {
     "image": "assets/img/daredevils.jpg",
-    "name": "🚴 Daredevils",
+    "name": "Daredevils 🚴",
     "last": {
       "message": "have fun 😀",
       "time": "2:43 PM",
       "readStatus": "sent"
+    },
+    "info": {
+      "img": "assets/img/daredevils-info.jpg",
+      "created": "Created on 11/12/2019 at 1:47 PM",
+      "description": "It's good. So good, it scratched that part of my mind! The part that doesn't allow good to exist without a condition.",
+      "other": "Sure, there are grays... But when you come right down to it, at its core, beneath every choice, there's either a one or a zero. You either do something or you don't. You walk out that door, you've decided to do nothing, to say no, which means you do not come back. You leave, you are no longer a part of this. You become a zero. If you stay, if you want to change the world, you become a yes. You become a one. So, I'll ask you again: are you a one or a zero?"
     },
     "status": {
       "pined": true

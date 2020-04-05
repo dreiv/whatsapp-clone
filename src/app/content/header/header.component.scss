@@ -1,7 +1,7 @@
 @import 'abstracts/mixins';
 
 :host {
-  border-left: solid 1px #e0e0e0;
+  border-left: solid 1px var(--highlight);
 }
 
 .common-header__start,

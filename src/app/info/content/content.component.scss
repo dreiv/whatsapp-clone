@@ -1,0 +1,42 @@
+@import 'abstracts/mixins';
+
+:host {
+  @include scroll;
+
+  background-color: var(--light-gray);
+}
+
+.main-info-image {
+  @include margin-horiz(auto);
+
+  display: block;
+  height: auto;
+
+  margin-bottom: var(--space-md);
+  border-radius: 50%;
+}
+
+section {
+  margin-bottom: 10px;
+  padding: var(--space-md);
+
+  font-size: 14px;
+
+  background-color: var(--white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.chat-name {
+  margin-bottom: var(--space-xs-fixed);
+}
+
+.section-paragraph {
+  font-size: 14px;
+}
+
+.section-title {
+  margin-bottom: var(--space-xs-fixed);
+
+  color: var(--dark-green);
+  font-size: 14px;
+}

@@ -1,0 +1,20 @@
+<section>
+  <img
+    src="{{ activeChat.info.img }}"
+    alt="{{ activeChat.name }}"
+    class="main-info-image"
+  />
+
+  <h3 class="chat-name">{{ activeChat.name }}</h3>
+  <p class="section-paragraph">{{ activeChat.info.created }}</p>
+</section>
+
+<section>
+  <h5 class="section-title">Description</h5>
+  <p class="section-paragraph">{{ activeChat.info.description }}</p>
+</section>
+
+<section>
+  <h5 class="section-title">Other content</h5>
+  <p class="section-paragraph">{{ activeChat.info.other }}</p>
+</section>
