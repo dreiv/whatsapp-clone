@@ -66,6 +66,8 @@
   grid-area: side;
 }
 .main-content {
+  display: flex;
+  flex-direction: column;
   grid-area: main;
   overflow-x: hidden;
 }

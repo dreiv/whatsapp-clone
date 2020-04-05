@@ -1,0 +1,95 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+:host {
+  @include scroll;
+  flex: 1;
+
+  background-color: #e5ddd5;
+
+  background-image: url('/assets/img/background.svg');
+  background-size: 15rem;
+}
+
+.messanger-list {
+  @include flex-column;
+
+  padding: 1rem 5%;
+}
+
+.message {
+  position: relative;
+
+  width: fit-content;
+  max-width: 30rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+
+  background-color: var(--white);
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -10px;
+
+    display: block;
+    border: solid;
+    border-color: transparent;
+    border-width: 0px 1rem 1rem 0rem;
+    border-right-color: var(--white);
+
+    content: '';
+  }
+}
+
+.is-time {
+  align-self: center;
+
+  color: var(--dark-gray);
+  font-size: 12px;
+  text-transform: uppercase;
+
+  background-color: var(--info-message);
+
+  &::before {
+    display: none;
+  }
+}
+
+.is-you {
+  --user-color-message: #cfe9ba;
+  align-self: flex-end;
+
+  background-color: var(--user-color-message);
+
+  &::before {
+    #{$start-direction}: auto;
+    #{$end-direction}: -1.75rem;
+    border-color: transparent;
+    border-width: 0px 1rem 1rem 1rem;
+    border-#{$start-direction}-color: var(--user-color-message);
+
+    content: '';
+  }
+
+  + .is-you::before {
+    display: none;
+  }
+}
+
+.is-other + .is-other::before {
+  display: none;
+}
+
+.status {
+  float: $end-direction;
+  margin-top: 0.5rem;
+}
+
+time {
+  font-size: 0.75rem;
+
+  opacity: 0.5;
+}
