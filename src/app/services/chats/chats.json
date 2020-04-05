@@ -3,8 +3,9 @@
     "image": "assets/img/daredevils.jpg",
     "name": "🚴 Daredevils",
     "last": {
-      "message": "Nice chat 😁",
-      "time": "11:37 AM"
+      "message": "have fun 😀",
+      "time": "2:43 PM",
+      "readStatus": "sent"
     },
     "status": {
       "pined": true
