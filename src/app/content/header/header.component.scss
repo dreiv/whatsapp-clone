@@ -1,3 +1,22 @@
+@import 'abstracts/mixins';
+
 :host {
   border-left: solid 1px #e0e0e0;
+}
+
+.common-header__start,
+.common-header__content {
+  overflow: hidden;
+}
+
+.title {
+  @include trim;
+
+  font-size: 1rem;
+}
+
+.status {
+  @include trim;
+
+  margin-top: 0.5ch;
 }

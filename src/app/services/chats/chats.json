@@ -1,7 +1,18 @@
 [
   {
+    "image": "assets/img/daredevils.jpg",
+    "name": "🚴 Daredevils",
+    "last": {
+      "message": "Nice chat 😁",
+      "time": "11:37 AM"
+    },
+    "status": {
+      "pined": true
+    }
+  },
+  {
     "image": "assets/img/tommy.jpg",
-    "name": "🚴 gO OUtSide sO bEAuTifUl!",
+    "name": "gO OUtSide sO bEAuTifUl!",
     "last": {
       "message": "Ahh... wHaT aRe u DoInG oN CoMpUtEr?? 👀",
       "time": "10:03 AM"

@@ -1,1 +1,23 @@
-<p>header works!</p>
+<button class="common-header__start">
+  <img
+    src="{{ activeChat.image }}"
+    alt="{{ activeChat.name }}"
+    class="common-header__image"
+  />
+
+  <div class="common-header__content">
+    <p class="title">
+      {{ activeChat.name }}Looooooodadadadadaadadadadadooooooooooooooooong
+    </p>
+    <p class="status">Online</p>
+  </div>
+</button>
+
+<nav class="common-header__nav">
+  <button class="common-header__nav-item icon">🔍</button>
+  <button class="common-header__nav-item icon">📎</button>
+  <button
+    class="common-header__nav-item icon icon-menu"
+    aria-label="menu"
+  ></button>
+</nav>

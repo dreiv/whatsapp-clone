@@ -11,4 +11,6 @@ export class ChatsService {
   constructor() {
     this.chats = chats;
   }
+
+  getActiveChat = (): Chat => ({ ...chats[0] })
 }

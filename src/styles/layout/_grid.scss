@@ -67,6 +67,7 @@
 }
 .main-content {
   grid-area: main;
+  overflow-x: hidden;
 }
 .main-info {
   grid-area: info;
