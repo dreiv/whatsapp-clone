@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --base-href=/whatsapp-clone/",
+    "build:prod": "ng build --prod --base-href=/whatsapp-clone/",
     "test": "ng test",
     "lint": "tsc --noEmit && eslint . --ext js,ts --quiet --fix",
     "e2e": "ng e2e"
