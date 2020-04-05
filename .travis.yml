@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '12'
+  - 'stable'
 
 cache:
   directories:
@@ -17,6 +17,5 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist
-  keep_history: true
   on:
     branch: master
