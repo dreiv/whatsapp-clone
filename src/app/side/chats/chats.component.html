@@ -1,5 +1,6 @@
 <ul>
   <li
+    (click)="coordinatorService.toggleMessage(true)"
     class="chat"
     [class.chat-unread]="chat.status?.unreadCount"
     role="button"

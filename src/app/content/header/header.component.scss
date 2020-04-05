@@ -9,6 +9,12 @@
   overflow: hidden;
 }
 
+.icon-back {
+  margin-right: var(--space-xxs);
+
+  outline: none;
+}
+
 .title {
   @include trim;
 

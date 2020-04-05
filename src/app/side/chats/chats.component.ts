@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChatsService } from 'src/app/services/chats/chats.service';
 import { Chat } from 'src/app/services/chats/chat';
+import { CoordinatorService } from 'src/app/services/coordinator.service';
 
 @Component({
   selector: 'app-side-chats',
@@ -10,7 +11,10 @@ import { Chat } from 'src/app/services/chats/chat';
 export class ChatsComponent implements OnInit {
   chats: Chat[]
 
-  constructor(private chatsService: ChatsService) { }
+  constructor(
+    private chatsService: ChatsService,
+    public coordinatorService: CoordinatorService
+  ) { }
 
   ngOnInit(): void {
     this.chats = this.chatsService.chats;

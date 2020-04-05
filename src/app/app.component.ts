@@ -10,16 +10,20 @@ import { Subscription } from 'rxjs';
 export class AppComponent implements OnInit, OnDestroy {
   @HostBinding('class.main-grid') isMain = true;
   @HostBinding('class.is-main-info-open') isInfoOpen;
+  @HostBinding('class.is-message-open') isMessageOpen;
 
-  private coordinatorSub: Subscription;
+  private infoToggledSub: Subscription;
+  private messageToggledSub: Subscription;
 
   constructor(private coordinatorService: CoordinatorService) { }
 
   ngOnInit(): void {
-    this.coordinatorSub = this.coordinatorService.isInfoChanged.subscribe(isInfoOpen => { this.isInfoOpen = isInfoOpen });
+    this.infoToggledSub = this.coordinatorService.infoToggledChanged.subscribe(isInfoOpen => { this.isInfoOpen = isInfoOpen });
+    this.messageToggledSub = this.coordinatorService.messageToggledChanged.subscribe(isMessageOpen => { this.isMessageOpen = isMessageOpen });
   }
 
   ngOnDestroy(): void {
-    this.coordinatorSub.unsubscribe();
+    this.infoToggledSub.unsubscribe();
+    this.messageToggledSub.unsubscribe();
   }
 }

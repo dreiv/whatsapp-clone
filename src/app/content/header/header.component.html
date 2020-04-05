@@ -1,3 +1,10 @@
+<button
+  class="common-button icon icon-back is-only-mobile"
+  (click)="coordinatorService.toggleMessage(false)"
+>
+  ⬅
+</button>
+
 <button class="common-header__start" (click)="coordinatorService.toggleInfo()">
   <img
     src="{{ activeChat.image }}"

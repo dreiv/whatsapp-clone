@@ -11,8 +11,10 @@ import { CoordinatorService } from 'src/app/services/coordinator.service';
 export class HeaderComponent implements OnInit {
   activeChat: Chat;
 
-  constructor(private chatsService: ChatsService,
-    public coordinatorService: CoordinatorService) { }
+  constructor(
+    private chatsService: ChatsService,
+    public coordinatorService: CoordinatorService
+  ) { }
 
   ngOnInit(): void {
     this.activeChat = this.chatsService.getActiveChat();

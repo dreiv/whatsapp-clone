@@ -76,6 +76,17 @@
 
   grid-area: main;
   overflow-x: hidden;
+
+  @media #{$phone} {
+    position: fixed;
+    #{$end-direction}: -100%;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    transition: transform 0.4s;
+  }
 }
 
 .main-info {
