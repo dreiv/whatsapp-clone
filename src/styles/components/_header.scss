@@ -1,4 +1,6 @@
 .common-header {
+  $this: &;
+
   display: flex;
   flex-shrink: 0;
   box-sizing: border-box;
@@ -11,6 +13,11 @@
   &__start {
     display: flex;
     margin-right: auto;
+    border-radius: 0.25rem;
+
+    &:hover #{$this}__image {
+      opacity: 0.7;
+    }
   }
 
   &__image {
