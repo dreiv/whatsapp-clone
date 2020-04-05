@@ -1,6 +1,11 @@
 <header class="common-header">
   <div class="common-header__start">
-    <button class="common-button icon">❌</button>
+    <button
+      class="common-button icon"
+      (click)="coordinatorService.toggleInfo(false)"
+    >
+      ❌
+    </button>
     <div class="common-header__content">Info</div>
   </div>
 </header>
