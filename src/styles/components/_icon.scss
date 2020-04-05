@@ -3,6 +3,8 @@
 
   transition: 0.2s;
 
+  will-change: filter;
+
   &:hover,
   &:focus {
     filter: grayscale(1) opacity(1);
@@ -40,8 +42,9 @@
   text-align: center;
 
   &::before {
-    display: inline-block;
     @include box(0.25rem);
+
+    display: inline-block;
     border-radius: 50%;
 
     vertical-align: middle;
