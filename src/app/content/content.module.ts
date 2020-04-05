@@ -6,10 +6,13 @@ import { MessangerComponent } from './messanger/messanger.component';
 import { MessageBoxComponent } from './message-box/message-box.component';
 
 @NgModule({
-  declarations: [HeaderComponent, ContentComponent, MessangerComponent, MessageBoxComponent],
-  imports: [
-    CommonModule
+  declarations: [
+    HeaderComponent,
+    ContentComponent,
+    MessangerComponent,
+    MessageBoxComponent
   ],
+  imports: [CommonModule],
   exports: [ContentComponent]
 })
-export class ContentModule { }
+export class ContentModule {}

@@ -15,11 +15,19 @@ export class AppComponent implements OnInit, OnDestroy {
   private infoToggledSub: Subscription;
   private messageToggledSub: Subscription;
 
-  constructor(private coordinatorService: CoordinatorService) { }
+  constructor(private coordinatorService: CoordinatorService) {}
 
   ngOnInit(): void {
-    this.infoToggledSub = this.coordinatorService.infoToggledChanged.subscribe(isInfoOpen => { this.isInfoOpen = isInfoOpen });
-    this.messageToggledSub = this.coordinatorService.messageToggledChanged.subscribe(isMessageOpen => { this.isMessageOpen = isMessageOpen });
+    this.infoToggledSub = this.coordinatorService.infoToggledChanged.subscribe(
+      isInfoOpen => {
+        this.isInfoOpen = isInfoOpen;
+      }
+    );
+    this.messageToggledSub = this.coordinatorService.messageToggledChanged.subscribe(
+      isMessageOpen => {
+        this.isMessageOpen = isMessageOpen;
+      }
+    );
   }
 
   ngOnDestroy(): void {

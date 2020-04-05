@@ -14,10 +14,9 @@ export class HeaderComponent implements OnInit {
   constructor(
     private chatsService: ChatsService,
     public coordinatorService: CoordinatorService
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.activeChat = this.chatsService.getActiveChat();
   }
-
 }

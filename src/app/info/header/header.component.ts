@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CoordinatorService } from 'src/app/services/coordinator.service';
 
 @Component({
@@ -6,11 +6,6 @@ import { CoordinatorService } from 'src/app/services/coordinator.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
-
-  constructor(public coordinatorService: CoordinatorService) { }
-
-  ngOnInit(): void {
-  }
-
+export class HeaderComponent {
+  constructor(public coordinatorService: CoordinatorService) {}
 }

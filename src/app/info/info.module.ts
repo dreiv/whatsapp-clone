@@ -6,9 +6,7 @@ import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [InfoComponent, HeaderComponent, ContentComponent],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   exports: [InfoComponent]
 })
-export class InfoModule { }
+export class InfoModule {}

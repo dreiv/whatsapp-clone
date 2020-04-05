@@ -9,15 +9,14 @@ import { CoordinatorService } from 'src/app/services/coordinator.service';
   styleUrls: ['./chats.component.scss']
 })
 export class ChatsComponent implements OnInit {
-  chats: Chat[]
+  chats: Chat[];
 
   constructor(
     private chatsService: ChatsService,
     public coordinatorService: CoordinatorService
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.chats = this.chatsService.chats;
   }
-
 }

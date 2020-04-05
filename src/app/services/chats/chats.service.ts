@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import chats from './chats.json'
+import chats from './chats.json';
 import { Chat } from './chat';
 
 @Injectable({
@@ -12,5 +12,5 @@ export class ChatsService {
     this.chats = chats;
   }
 
-  getActiveChat = (): Chat => ({ ...chats[0] })
+  getActiveChat = (): Chat => ({ ...chats[0] });
 }

@@ -10,10 +10,9 @@ import { Chat } from 'src/app/services/chats/chat';
 export class ContentComponent implements OnInit {
   activeChat: Chat;
 
-  constructor(private chatsService: ChatsService) { }
+  constructor(private chatsService: ChatsService) {}
 
   ngOnInit(): void {
     this.activeChat = this.chatsService.getActiveChat();
   }
-
 }

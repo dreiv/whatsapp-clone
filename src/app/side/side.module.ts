@@ -12,11 +12,7 @@ import { ChatsComponent } from './chats/chats.component';
     SearchComponent,
     ChatsComponent
   ],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    SideComponent
-  ]
+  imports: [CommonModule],
+  exports: [SideComponent]
 })
-export class SideModule { }
+export class SideModule {}

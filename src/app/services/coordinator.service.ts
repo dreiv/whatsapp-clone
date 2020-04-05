@@ -5,9 +5,13 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class CoordinatorService {
-  infoToggledChanged: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  infoToggledChanged: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
+    false
+  );
   isInfoToggled = false;
-  messageToggledChanged: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  messageToggledChanged: BehaviorSubject<boolean> = new BehaviorSubject<
+    boolean
+  >(false);
   isMessageToggled = false;
 
   toggleInfo(toggleState = !this.isInfoToggled): void {
