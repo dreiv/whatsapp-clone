@@ -31,13 +31,13 @@ $fade: 0.6;
     font-weight: bold;
   }
 
+  &:hover {
+    background-color: var(--light-gray);
+  }
+
   &:focus {
     background-color: var(--main-gray);
     outline: none;
-  }
-
-  &:hover:not(:focus) {
-    background-color: var(--light-gray);
   }
 }
 
